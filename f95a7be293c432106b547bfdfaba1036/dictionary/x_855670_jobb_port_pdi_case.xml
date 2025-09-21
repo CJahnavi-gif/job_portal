@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="49e06076938832106b547bfdfaba109c" label="pdi case" max_length="40" name="x_855670_jobb_port_pdi_case" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="is it true/False?" max_length="40" name="is_it_true_false" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Due date" max_length="40" name="due_date" type="due_date"/>
+        <element label="Name" max_length="40" name="name" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <index name="index">
+            <element name="assignment_group"/>
+        </index>
+    </element>
+</database>
